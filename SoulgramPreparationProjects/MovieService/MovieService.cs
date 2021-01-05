@@ -8,7 +8,7 @@ namespace MovieService
     {
         private readonly HttpClient _httpClient;
 
-        public MovieService(string location)
+        public MovieService()
         {
             //services.AddHttpClient<MovieService>(c =>
             //{
