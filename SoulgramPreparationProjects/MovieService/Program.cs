@@ -10,9 +10,13 @@ namespace MovieService
             
             var movieService = new MovieService();
             var kinpMovieService = new KinopoiskMovieService();
+            var kinpUnOffMovieService = new KinopoiskUnoffical();
+            var ottService = new OTTService();
 
-            await kinpMovieService.GetMovie(1143242); //Movie "Джентельмены"
 
+            await ottService.GetAutocompleteMovies("EndGame");
+            //await kinpUnOffMovieService.GetMovie("Джентельмены"); //Movie "Джентельмены"
+            //await kinpMovieService.GetMovie(1143242); //Movie "Джентельмены"
             //await kinpMovieService.GetAllMovie(1);
             //await movieService.GetAutocompleteMovies("Мальчишник");
         }
